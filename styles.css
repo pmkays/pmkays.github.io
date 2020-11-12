@@ -1,6 +1,59 @@
+/*HTML ELEMENTS*/
+nav{
+  width: 90%;
+}
+
+a:hover{
+  color: #2FAFE5 !important;
+}
+
+section{
+  min-height: 100vh;
+}
+
+form{
+  background-color: #3282B8;
+  width: 45%;
+  margin: 0 auto;
+  padding: 3%;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+}
+
+input, textarea{
+  width: 100%;
+  height: 5%;
+  background-color: #C4C4C4;
+  border:none;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 3%;
+}
+
+textarea{
+  height: 50%;
+}
+
+input[type=submit]{
+  width: 20%;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+::placeholder{
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-style: italic;
+}
+
+
+
+/*CLASSES*/
 .container-fluid{
   background-color: #1B262C;
 }
+
 
 .name{
   font-family: 'Quicksand', sans-serif;
@@ -44,18 +97,18 @@
   height: 50px;
 }
 
-#landing-page{
-  height: 100vh;
-}
-
 .fa-github, .fa-linkedin, .fa-envelope{
   color: #BBE1FA;
   font-size: 2em;
-  margin-bottom: 0.5%;
+  margin-bottom: 1%;
 }
 
-#contact-logos{
-  margin-left: 10%;
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
+  color: #2FAFE5;
+}
+
+.contact-logos{
+  padding-left: 15%;
   margin-bottom: 5%;
 }
 
@@ -71,6 +124,13 @@
   color: #FFFFFF;
   font-size: 3.5em;
   margin-left: 20%;
+}
+
+.section-subtitle{
+  font-family: 'Quicksand', sans-serif;
+  color: #3282B8;
+  font-size: 2em;
+  margin-left: 25%;
 }
 
 .about-text{
@@ -112,16 +172,18 @@
 .individual-skill-title{
   font-family: 'Lato', sans-serif;
   color: white;
+  font-weight: 600;
   text-align: center;
 
 }
 
 .individual-skill-desc{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: #FFFFFF;
   font-size: 0.9em;
   text-align: center;
   margin: 5% 10% 5% 10%;
+  line-height: 130%;
 }
 
 #skills{
