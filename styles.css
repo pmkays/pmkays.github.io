@@ -1,0 +1,68 @@
+.container-fluid{
+  background-color: #1B262C;
+}
+
+.name{
+  font-family: 'Quicksand', sans-serif;
+  font-size:5em;
+  font-weight: 400;
+  text-align:left;
+  display:inline;
+  color: #FFFFFF;
+
+}
+
+.swe{
+  font-family: 'Quicksand', sans-serif;
+  font-size:4em;
+  font-weight: 500;
+  text-align: right;
+  display: inline;
+  line-height: 190%;
+  color: #3282B8;
+}
+
+.gradient-line{
+  width: 10px;
+  height: 250px;
+  background: linear-gradient(180deg, #3282B8 31.25%, rgba(245, 245, 245, 0) 100%);
+  text-align: right;
+}
+
+.introduction{
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
+.intro-message{
+  color:#C5DBEB;
+  font-size: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+#landing-page{
+  height: 100vh;
+}
+
+.fa-github, .fa-linkedin, .fa-envelope{
+  color: #BBE1FA;
+  font-size: 2em;
+  margin-bottom: 0.5%;
+}
+
+#contact-logos{
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.nav-link{
+  color:#BBE1FA;
+  font-size: 1.3em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
