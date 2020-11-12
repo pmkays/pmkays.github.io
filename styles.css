@@ -51,12 +51,13 @@ input[type=submit]{
 
 /*CLASSES*/
 .container-fluid{
+  /*background adapted from: https://projects.verou.me/css3patterns/#starry-night*/
   background-color: #1B262C;
   background-image:
-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 1px, transparent 10px);
-background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; 
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 1px, transparent 10px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; 
 }
 
 
@@ -124,6 +125,17 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   font-weight: 500;
 }
 
+.fa-angle-double-down{
+  font-size: 2.5em;
+}
+
+.fa-gradient {
+  background: rgb(50,130,184);
+  background: linear-gradient(180deg, rgba(50,130,184,1) 25%, rgba(87,149,191,1) 47%, rgba(135,184,217,1) 80%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .section-title{
   font-family: 'Quicksand', sans-serif;
   color: #FFFFFF;
@@ -135,13 +147,18 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   font-family: 'Quicksand', sans-serif;
   color: #3282B8;
   font-size: 2em;
+  margin-bottom: 3%;
   margin-left: 25%;
+}
+
+#about{
+  margin-bottom:10%;
 }
 
 .about-text{
   color: white;
   margin: 0 30% 15% 2%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-family: 'Work Sans', sans-serif;
   text-align: left;
 }
@@ -211,6 +228,48 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
 .fa-chevron-left, .fa-chevron-right{
-  color: black;
+  color: #000000;
   font-size: 2em;
+}
+
+.carousel{
+  border-radius: 5px;
+}
+
+.carousel-links{
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+.carousel-links:hover{
+  cursor: pointer;
+}
+
+.carousel-inner > .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-inner > .carousel-item > img {
+  height: 100%;
+  width: 100%;
+  border-radius:5px;
+}
+
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+#contact{
+  padding: 5%;
+}
+
+footer{
+  color:#FFFFFF;
+  width: 100%;
+  padding: 1%;
+  background-color:#2C3A42;
+  text-align:center;
 }
