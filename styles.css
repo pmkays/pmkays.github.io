@@ -26,7 +26,6 @@
   width: 10px;
   height: 250px;
   background: linear-gradient(180deg, #3282B8 31.25%, rgba(245, 245, 245, 0) 100%);
-  text-align: right;
 }
 
 .introduction{
@@ -64,5 +63,67 @@
   color:#BBE1FA;
   font-size: 1.3em;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.section-title{
+  font-family: 'Quicksand', sans-serif;
+  color: #FFFFFF;
+  font-size: 3.5em;
+  margin-left: 20%;
+}
+
+.about-text{
+  color: white;
+  margin: 0 30% 15% 2%;
+  font-size: 1.1em;
+  font-family: 'Work Sans', sans-serif;
+  text-align: left;
+}
+
+.left-gradient{
+  margin-left: 5%;
+}
+
+.dp{
+  display:inline;
+  margin-left: 35%;
+  border-radius: 15px;
+  width: 10%;
+  height: 10%;
+}
+
+.individual-skill{
+  background-color: #5B656F;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+
+.fa-paint-brush, .fa-laptop-code, .fa-code-branch{
+  color:#2FAFE5;
+  font-size: 3em;
+}
+
+.individual-skill-logo{
+  margin: 5%;
+  text-align: center;
+}
+
+.individual-skill-title{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+
+}
+
+.individual-skill-desc{
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 5% 10% 5% 10%;
+}
+
+#skills{
+  margin-left: 15%;
 }

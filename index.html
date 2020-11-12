@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/18144fa12c.js" crossorigin="anonymous"></script>  
   <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -54,10 +55,7 @@
                 </ul>
             </div>
         </nav>
-            <!-- <a class="" href="#landing-page">Logo</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a> -->
+
         <section id="landing-page">
             <div id="title">
                 <div class="row introduction">
@@ -77,32 +75,36 @@
                         <p class="col text-center intro-message">Hi, nice to meet you.</p>
                     </div>
                     <div>
-                        <p class="col text-center"> Arrows</p>
+                        <p class="col text-center intro-message"> Arrows</p>
                     </div>
                 </div>
             </div>
         </section>
     
         <section id="about">
-            <h1>About</h1>
+            <h1 class="section-title">About</h1><br/>
             <div id="about-text">
-                <div>Line gradient</div>
-                <div>I love building things and developing websites. I’m currently a student at RMIT studying Software Engineering and am always looking for more opportunities to learn.</div>
-                <div>Line gradient</div>
-                <div>Profile picture</div>
+                <div class="row">
+                    <img class="dp" src="/dp_cropped.jpg">
+                    <div class="gradient-line left-gradient"></div>
+                    <p class="about-text right-gradient col">I love building things and developing websites. I’m currently a student at RMIT studying Software Engineering and am always looking for more opportunities to learn. </p>
+                </div>
             </div>
-            <div id="skills">
-                <div id="skill-web-design">
-                    <div>Logo</div>
-                    <p> Web Design <br/> I make things look good on all screens. </p>
+            <div id="skills" class="row">
+                <div class="individual-skill col-sm-3">
+                    <div class="individual-skill-logo"><i class="fas fa-paint-brush"></i></div>
+                    <h5 class="individual-skill-title"> Web Design <h5> 
+                    <p class="individual-skill-desc"> I make things look good on all screens. </p>
                 </div>
-                <div id="skill-web-development">
-                    <div>Logo</div>
-                    <p> Web Development <br/> I’m experienced with various web languages e.g. HTML, CSS, JavaScript and frameworks e.g. .NET and Spring Boot </p>
+                <div class="individual-skill col-sm-3">
+                    <div class="individual-skill-logo"><i class="fas fa-laptop-code"></i></div>
+                    <h5 class="individual-skill-title"> Web Development <h5> 
+                    <p class="individual-skill-desc">I’m experienced with various web languages e.g. HTML, CSS, JavaScript and frameworks e.g. .NET and React.</p>
                 </div>
-                <div id="skill-software-engineering">
-                    <div>Logo</div>
-                    <p> Software Engineering <br/> I use modern coding practices to plan, design, implement and test intuitive apps and websites.  </p>
+                <div class="individual-skill col-sm-3">
+                    <div class="individual-skill-logo"><i class="fas fa-code-branch"></i></div>
+                    <h5 class="individual-skill-title"> Software Engineering <h5> 
+                    <p class="individual-skill-desc">I use modern coding practices to plan, design, implement and test intuitive apps and websites.  </p>
                 </div>
             </div>
         </section>
