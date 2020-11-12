@@ -43,7 +43,7 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-sm justify-content-end">
-            <a class="navbar-brand" href="#landing-page"><img class="logo" src="/logo.png"></a>
+            <a class="navbar-brand ml-5" href="#landing-page"><img class="logo" src="/logo.png"></a>
             <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-2" id="navbarSupportedContent">
                 <ul class="navbar-nav text-right">
                     <li class="nav-item active">
@@ -85,7 +85,8 @@
         </section>
     
         <section id="about">
-            <h1 class="section-title">About</h1><br/>
+            <h1 class="section-title">About</h1>
+            <h3 class='section-subtitle'>Learn something new about me!</h3><br/>
             <div id="about-text">
                 <div class="row">
                     <img class="dp" src="/dp_cropped.jpg">
@@ -194,6 +195,21 @@
             </div>
         </div>
         &#169; Designed and coded by Paula Kurniawan 2020 
-    </footer>  
+    </footer>
+    <a id="scroll-btn"><i class="fas fa-caret-square-up"></i></a>
+    <script>
+        $(window).scroll(() =>{scrollButtonHandler()});
+        
+        scrollButtonHandler = () =>{
+            var scrollTop = $(window).scrollTop();
+            scrollTop > 100 ? $("#scroll-btn").show() : $("#scroll-btn").hide();
+        }
+
+        $("#scroll-btn").click(() => {
+            window.scrollTo({
+                top: 0, behavior: 'smooth'
+            });
+        });
+    </script>  
 </body>
 </html>
