@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Paula Kurniawan</title>
+  <meta name="description" content="My Portfolio">
+  <meta name="author" content="Paula Kurniawan">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_VrEOLCVXUi06JSSqeXuqQ");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          emailjs.sendForm('contact_service', 'template_pujf54r', this)
+              .then(function() {
+                  console.log('SUCCESS!');
+              }, function(error) {
+                    console.log('FAILED...', error);
+              });
+      });
+    }
+</script>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#landing-page">Logo</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="landing-page">
+        <header>
+            <div id="title">
+                <p>Software Engineer</p>
+                <div>Gradient Line</div>
+                <p>Paula Kurniawan</p>
+            </div>
+        </header>
+        <div id="contact-logos">
+            <a>Mail</a>
+            <a>GitHub</a>
+            <a>LinkedIn</a>
+        </div>
+        <div id="transition">
+            <p>Hi, nice to meet you.</p>
+            <div>Arrows</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <div id="about-text">
+            <div>Line gradient</div>
+            <div>I love building things and developing websites. I’m currently a student at RMIT studying Software Engineering and am always looking for more opportunities to learn.</div>
+            <div>Line gradient</div>
+            <div>Profile picture</div>
+        </div>
+        <div id="skills">
+            <div id="skill-web-design">
+                <div>Logo</div>
+                <p> Web Design <br/> I make things look good on all screens. </p>
+            </div>
+            <div id="skill-web-development">
+                <div>Logo</div>
+                <p> Web Development <br/> I’m experienced with various web languages e.g. HTML, CSS, JavaScript and frameworks e.g. .NET and Spring Boot </p>
+            </div>
+            <div id="skill-software-engineering">
+                <div>Logo</div>
+                <p> Software Engineering <br/> I use modern coding practices to plan, design, implement and test intuitive apps and websites.  </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1> Projects</h1>
+        <h3>See what I've been up to!</h3>
+        <div id="carousel">Some projects here....</div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <h3> Say hello!</h3>
+        <div id="contact-logos">
+            <a>Mail</a>
+            <a>GitHub</a>
+            <a>LinkedIn</a>
+        </div>        
+        <form id="contact-form">
+            <input type="text" placeholder="Name..." name="name" id="name" required/>
+            <input type="text" placeholder="Your Email..." name="sender-email" id="sender-email" required/>
+            <input type="text" placeholder="Subject..." name="subject" id="subject" required/>
+            <textarea placeholder="Message..." name="message" id="message" required></textarea>
+            <input type="submit" name="submit-btn" id="submit-btn" value="Send">
+        </form>
+    </section>
+
+</body>
+</html>
