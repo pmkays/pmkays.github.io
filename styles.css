@@ -1,4 +1,24 @@
 /*HTML ELEMENTS*/
+html{
+  scroll-behavior:smooth
+}
+
+.loading-screen {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+  z-index: 9999;
+  text-align: center;
+	background: url("./images/Pulse-1s-200px.gif") center no-repeat #2C3A42;
+}
+
+.fa-spinner{
+  color:red;
+  size: 3em;
+}
+
 nav{
   width: 90%;
 }
@@ -31,14 +51,36 @@ input, textarea{
   padding-left: 3%;
 }
 
+input:focus{
+  outline: 5px solid #C4C4C4;
+}
+
+textarea:focus{
+  outline: 5px solid #C4C4C4;
+}
+
 textarea{
   height: 40%;
 }
 
-input[type=submit]{
+#submit-btn{
   width: 20%;
-  padding: 1%;
   border-radius: 5px;
+  font-weight: 600;
+  padding: 1%;
+  background:#C4C4C4;
+  border:none;
+  margin-bottom: 1%;
+  outline:none;
+}
+
+#submit-btn:hover{
+  width: 20%;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 1%;
+  background:#a8b6e0;
+  border:none;
 }
 
 ::placeholder{
@@ -54,7 +96,7 @@ input[type=submit]{
   /*background adapted from: https://projects.verou.me/css3patterns/#starry-night*/
   background-color: #1B262C;
   background-image:
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+    radial-gradient(#FFFFFF, rgba(255,255,255,.15) 1px, transparent 10px),
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 1px, transparent 10px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; 
@@ -133,6 +175,7 @@ input[type=submit]{
   background: rgb(50,130,184);
   background: linear-gradient(180deg, rgba(50,130,184,1) 25%, rgba(87,149,191,1) 47%, rgba(135,184,217,1) 80%);
   -webkit-background-clip: text;
+  background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -152,11 +195,11 @@ input[type=submit]{
 }
 
 #about{
-  margin-bottom:10%;
+  margin-bottom:15%;
 }
 
 .about-text{
-  color: white;
+  color: #FFFFFF;
   margin: 0 30% 15% 2%;
   font-size: 1.2em;
   font-family: 'Work Sans', sans-serif;
@@ -193,24 +236,21 @@ input[type=submit]{
 
 .individual-skill-title{
   font-family: 'Lato', sans-serif;
-  color: white;
-  font-weight: 600;
+  color: #FFFFFF;
   text-align: center;
-  letter-spacing: 0.1em;
-
 }
 
 .individual-skill-desc{
   font-family: 'Work Sans', sans-serif;
   color: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: center;
   margin: 5% 10% 5% 10%;
   line-height: 130%;
 }
 
 #skills{
-  margin-left: 15%;
+  margin-left: 13%;
 }
 
 .carousel{
@@ -283,4 +323,8 @@ footer{
   font-size: 2em;
   color: #BBE1FA;
   cursor: pointer;
+}
+
+#email-result{
+  color: #FFFFFF;
 }
