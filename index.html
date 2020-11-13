@@ -20,9 +20,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   
-  <!-- EmailJS and FontAwesome -->
+  <!-- EmailJS, FontAwesome, Animation-related libraries -->
   <script src="https://kit.fontawesome.com/18144fa12c.js" crossorigin="anonymous"></script>  
   <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -65,23 +68,25 @@
                         <p class="col text-center intro-message">Hi, nice to meet you.</p>
                     </div>
                     <div>
-                        <p class="col text-center intro-message"> <i class="fas fa-angle-double-down fa-gradient"></i></p>
+                        <p class="col text-center intro-message animate__animated animate__bounce animate__infinite	infinite animate__slower"> <i class="fas fa-angle-double-down fa-gradient"></i></p>
                     </div>
                 </div>
             </div>
         </section>
     
-        <section id="about">
-            <h1 class="section-title">About</h1>
-            <h3 class='section-subtitle'>Learn something new about me!</h3><br/>
-            <div id="about-text">
-                <div class="row">
-                    <img class="dp" src="./images/dp_cropped.jpg">
-                    <div class="gradient-line left-gradient"></div>
-                    <p class="about-text right-gradient col">I love building things and developing websites. I’m currently a student at RMIT studying Software Engineering and am always looking for more opportunities to learn. </p>
+        <section id="about" class="animated scroll-animations">
+            <div data-aos="fade-up">
+                <h1 class="section-title">About</h1>
+                <h3 class='section-subtitle'>Learn something new about me!</h3><br/>
+                <div id="about-text">
+                    <div class="row">
+                        <img class="dp" src="./images/dp_cropped.jpg">
+                        <div class="gradient-line left-gradient"></div>
+                        <p class="about-text right-gradient col">I love building things and developing websites. I’m currently a student at RMIT studying Software Engineering and am always looking for more opportunities to learn. </p>
+                    </div>
                 </div>
             </div>
-            <div id="skills" class="row">
+            <div id="skills" class="row" data-aos="fade-right">
                 <div class="individual-skill col-sm-3">
                     <div class="individual-skill-logo"><i class="fas fa-paint-brush"></i></div>
                     <h4 class="individual-skill-title"> Web Design </h4> 
@@ -100,7 +105,7 @@
             </div>
         </section>
     
-        <section id="projects">
+        <section id="projects" data-aos="fade-down">
             <h1 class='section-title'> Projects</h1>
             <h3 class='section-subtitle'>See what I've been up to!</h3><br/>
             <div id="controls" class="carousel slide" data-ride="carousel">
@@ -159,7 +164,7 @@
             </div>
         </section>
     
-        <section id="contact">
+        <section id="contact" data-aos="zoom-in">
             <h1 class="section-title">Contact</h1>
             <h3 class="section-subtitle"> Say hello!</h3><br/>
             <form id="contact-form">
