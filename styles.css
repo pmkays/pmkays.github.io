@@ -49,6 +49,7 @@ input, textarea{
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   padding-left: 3%;
+  border-radius: 5px;
 }
 
 input:focus{
@@ -223,6 +224,7 @@ textarea{
   background-color: #5B656F;
   border-radius: 5px;
   margin-right: 5%;
+  max-width: 50% !important;
 }
 
 .fa-paint-brush, .fa-laptop-code, .fa-code-branch{
@@ -258,6 +260,7 @@ textarea{
   width: 50%;
   height: 50%;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .carousel-caption{
@@ -271,10 +274,6 @@ textarea{
 .fa-chevron-left, .fa-chevron-right{
   color: #000000;
   font-size: 2em;
-}
-
-.carousel{
-  border-radius: 5px;
 }
 
 .carousel-links{
@@ -310,7 +309,7 @@ textarea{
 footer{
   color:#FFFFFF;
   width: 100%;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   background-color:#2C3A42;
   text-align:center;
 }
@@ -328,4 +327,201 @@ footer{
 
 #email-result{
   color: #FFFFFF;
+}
+
+@media (min-width: 320px) {
+  .section-title{
+    font-size: 3em;
+    margin-left: 10%;
+  }
+  
+  .section-subtitle{
+    font-size: 1.5em;
+    margin-left: 15%;
+  }
+
+  .carousel{
+    width: 90%;
+    height: 40%;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  #submit-btn{
+    width: 30%;
+  }
+
+  footer{
+    padding: 5% 0 5% 0;
+  }
+}
+
+@media (min-width: 568px) { 
+  .section-title{
+    font-size: 3em;
+    margin-left: 10%;
+  }
+  
+  .section-subtitle{
+    font-size: 1.5em;
+    margin-left: 15%;
+  }
+
+  .carousel{
+    width: 70%;
+    height: 80%;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  input{
+    height: 10%;
+  }
+
+  textarea{
+    height: 50%;
+  }
+
+  #submit-btn{
+    width: 30%;
+  }
+
+  footer{
+    padding: 5% 0 5% 0;
+  }
+}
+
+/* landscape phone */
+@media (min-width: 768px) { 
+  .section-title{
+    font-size: 3em;
+    margin-left: 10%;
+  }
+  
+  .section-subtitle{
+    font-size: 1.5em;
+    margin-left: 15%;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  textarea{
+    height: 50%;
+  }
+
+  #submit-btn{
+    width: 30%;
+  }
+
+  footer{
+    padding: 5% 0 5% 0;
+  }
+}
+
+/*portrait -> most likely tablet (portrait)*/
+@media (min-device-width : 768px) 
+and (orientation : portrait) { 
+  .carousel{
+    width: 80%;
+    height: 40%;
+  }
+
+  input{
+    height: 5%;
+  }
+}
+
+/*landscape -> most likely phones (landscape), viewport height is very small so height % needs to be increased*/
+@media (min-device-width : 768px) 
+and (orientation : landscape) { 
+  .carousel{
+    width: 80%;
+    height: 70%;
+  }
+
+  input{
+    height: 10%;
+  }
+}
+
+@media (min-width: 992px) { 
+  .section-title{
+    font-size: 5em;
+    margin-left: 15%;
+  }
+
+  .section-subtitle{
+    font-size: 2em;
+    margin-left: 20%;
+  }
+
+  .carousel{
+    width: 80%;
+    height: 60%;
+  }
+
+  form{
+    width: 80%;
+  }
+
+  footer{
+    padding: 3% 0 3% 0;
+  }
+
+  input{
+    height: 4%;
+  }
+
+  footer{
+    padding: 2% 0 2% 0;
+  }
+
+}
+
+/*portrait -> most likely large tablet (portrait)*/
+@media (min-device-width : 992px) 
+and (orientation : portrait) { 
+  .carousel{
+    width: 80%;
+    height: 40%;
+  }
+
+  input{
+    height: 5%;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+  .section-title{
+    font-size: 4.5em;
+    margin-left: 20%;
+  }
+  .section-subtitle{
+    font-size: 2em;
+    margin-left: 25%;
+  }
+
+  .carousel{
+    width: 60%;
+    height: 60%;
+  }
+
+  form{
+    width: 60%;
+  }
+
+  input{
+    height: 5%;
+  }
+
+  footer{
+    padding: 2% 0 2% 0;
+  }
 }
