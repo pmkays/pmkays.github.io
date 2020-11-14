@@ -197,6 +197,7 @@ textarea{
 }
 
 #about{
+  margin-top: 15%;
   margin-bottom:15%;
 }
 
@@ -215,6 +216,7 @@ textarea{
 .dp{
   display:inline;
   margin-left: 35%;
+  margin-right: 3%;
   border-radius: 15px;
   width: 10%;
   height: 10%;
@@ -303,7 +305,7 @@ textarea{
 }
 
 #contact{
-  padding: 5%;
+  padding-bottom: 10%;
 }
 
 footer{
@@ -364,14 +366,50 @@ footer{
     margin-bottom: 10%;
   }
 
+  .disappear{
+    display: none;
+  }
+
+  .dp{
+    border-radius: 15px;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+  }
+
+  .about-text{
+    margin: 10% 20% 20% 20%;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  #skills{
+    margin:0;
+  }
+
+  .individual-skill{
+    margin: 0 10% 10% 13%;
+    max-width: 75% !important;
+  }
+
+  .individual-skill-desc{
+    margin:0 0 10% 0;
+    font-size: 0.9em;
+  }
+
   .section-title{
-    font-size: 3em;
+    font-size: 2.5em;
     margin-left: 10%;
   }
   
   .section-subtitle{
     font-size: 1.5em;
     margin-left: 15%;
+  }
+
+  #projects{
+    margin-top: 75%;
+    margin-bottom: -20%;
   }
 
   .carousel{
@@ -381,6 +419,7 @@ footer{
 
   form{
     width: 90%;
+    padding: 5%;
   }
 
   #submit-btn, #submit-btn:hover{
@@ -403,6 +442,15 @@ footer{
   .section-subtitle{
     font-size: 1.5em;
     margin-left: 15%;
+  }
+
+  .about-text{
+    font-size: 1em;
+  }
+
+  #projects{
+    margin-top: 10%;
+    margin-bottom: 20%;
   }
 
   .carousel{
@@ -456,6 +504,33 @@ footer{
     margin-bottom: 10%;
   }
 
+  .dp{
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+  }
+
+  .about-text{
+    margin: 10% 20% 10% 20%;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #skills{
+    margin:0;
+  }
+
+  .individual-skill{
+    background-color: #5B656F;
+    margin: 0 20% 10% 20%;
+    max-width: 60% !important;
+  }
+
+  .individual-skill-desc{
+    margin:0 0 10% 0;
+    font-size: 1em;
+  }
+
   .section-title{
     font-size: 3em;
     margin-left: 10%;
@@ -465,6 +540,7 @@ footer{
     font-size: 1.5em;
     margin-left: 15%;
   }
+
 
   form{
     width: 90%;
@@ -491,6 +567,11 @@ and (orientation : portrait) {
     height: 40%;
   }
 
+  #projects{
+    margin-top: 40%;
+    margin-bottom: -20%;
+  }
+
   input{
     height: 5%;
   }
@@ -501,12 +582,18 @@ and (orientation : portrait) {
 and (orientation : landscape) { 
   .carousel{
     width: 80%;
-    height: 70%;
+    height: 100%;
   }
 
   input{
     height: 10%;
   }
+
+  #projects{
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
 }
 
 @media (min-width: 992px) { 
@@ -533,6 +620,14 @@ and (orientation : landscape) {
     margin-bottom: 5%;
   }
 
+  #skills{
+    margin-left: 13%;
+  }
+
+  .individual-skill{
+    margin:0 2% 0 2%;
+  }
+
   .section-title{
     font-size: 5em;
     margin-left: 15%;
@@ -550,6 +645,7 @@ and (orientation : landscape) {
 
   form{
     width: 80%;
+    padding: 3%;
   }
 
   footer{
@@ -557,7 +653,7 @@ and (orientation : landscape) {
   }
 
   input{
-    height: 4%;
+    height: 5%;
   }
 
   footer{
@@ -577,6 +673,12 @@ and (orientation : portrait) {
   input{
     height: 5%;
   }
+
+  #projects{
+    margin-top: 0;
+    margin-bottom: -20%;
+  }
+
 }
 
 
@@ -614,13 +716,44 @@ and (orientation : portrait) {
     margin-bottom: 3%;
   }
 
+  .disappear{
+    display: block;
+  }
+
+  #about{
+    margin-top:-10%;
+  }
+
+  .about-text{
+    margin: 0 30% 15% 2%;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  
+  .dp{
+    display:inline;
+    margin-left: 35%;
+    margin-right: 3%;
+    width: 10%;
+    height: 10%;
+  }
+
+  #skills{
+    margin-left: 10%;
+  }
+  
   .section-title{
     font-size: 4.5em;
     margin-left: 20%;
   }
+
   .section-subtitle{
     font-size: 2em;
     margin-left: 25%;
+  }
+
+  #projects{
+    margin-bottom: 5%;
   }
 
   .carousel{
