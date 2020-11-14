@@ -24,7 +24,7 @@ nav{
 }
 
 a:hover{
-  color: #2FAFE5 !important;
+  color: #3282B8 !important;
   text-decoration: none !important;
 }
 
@@ -155,7 +155,7 @@ textarea{
 }
 
 .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
-  color: #2FAFE5;
+  color: #3282B8;
 }
 
 .contact-logos{
