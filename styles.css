@@ -25,6 +25,7 @@ nav{
 
 a:hover{
   color: #2FAFE5 !important;
+  text-decoration: none !important;
 }
 
 section{
@@ -104,24 +105,23 @@ textarea{
 }
 
 
-.name{
-  font-family: 'Quicksand', sans-serif;
-  font-size:5em;
-  font-weight: 400;
-  text-align:left;
-  display:inline;
-  color: #FFFFFF;
-
-}
-
 .swe{
   font-family: 'Quicksand', sans-serif;
   font-size:4em;
   font-weight: 500;
-  text-align: right;
-  display: inline;
+  text-align:left;
+  display:inline;
   line-height: 190%;
   color: #3282B8;
+}
+
+.name{
+  font-family: 'Quicksand', sans-serif;
+  font-size:5em;
+  font-weight: 400;
+  text-align: right;
+  display: inline;
+  color: #FFFFFF;
 }
 
 .gradient-line{
@@ -151,6 +151,7 @@ textarea{
   color: #BBE1FA;
   font-size: 2em;
   margin-bottom: 1%;
+  display:block;
 }
 
 .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
@@ -158,8 +159,7 @@ textarea{
 }
 
 .contact-logos{
-  padding-left: 15%;
-  margin-bottom: 5%;
+  text-align:center;
 }
 
 .nav-link{
@@ -330,6 +330,40 @@ footer{
 }
 
 @media (min-width: 320px) {
+  .name{
+    font-size:3em;
+    text-align: center;
+  }
+
+  .gradient-line{
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(245, 245, 245, 0), #3282B8, rgba(245, 245, 245, 0) 100%);
+  }
+
+  .swe{
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .fa-github, .fa-linkedin, .fa-envelope{
+    display: inline;
+    margin: 1.5%;
+    font-size: 1.5em;
+  }
+
+  #transition{
+    margin-top: 20%;
+  }
+
+  .intro-message{
+    font-size: 1em;
+    margin-bottom: 10%;
+  }
+
   .section-title{
     font-size: 3em;
     margin-left: 10%;
@@ -349,7 +383,7 @@ footer{
     width: 90%;
   }
 
-  #submit-btn{
+  #submit-btn, #submit-btn:hover{
     width: 30%;
   }
 
@@ -359,6 +393,8 @@ footer{
 }
 
 @media (min-width: 568px) { 
+  /*About section looks good; i.e. it's the same as 320px*/
+
   .section-title{
     font-size: 3em;
     margin-left: 10%;
@@ -386,7 +422,7 @@ footer{
     height: 50%;
   }
 
-  #submit-btn{
+  #submit-btn, #submit-btn:hover{
     width: 30%;
   }
 
@@ -395,8 +431,31 @@ footer{
   }
 }
 
-/* landscape phone */
 @media (min-width: 768px) { 
+
+  .name{
+    font-size: 4.5em;
+  }
+
+  .swe{
+    font-size: 3em;
+  }
+
+  .fa-github, .fa-linkedin, .fa-envelope{
+    display: inline;
+    margin: 1.5%;
+    font-size: 2em;
+  }
+
+  #transition{
+    margin-top: 15%;
+  }
+
+  .intro-message{
+    font-size: 1.5em;
+    margin-bottom: 10%;
+  }
+
   .section-title{
     font-size: 3em;
     margin-left: 10%;
@@ -415,8 +474,8 @@ footer{
     height: 50%;
   }
 
-  #submit-btn{
-    width: 30%;
+  #submit-btn, #submit-btn:hover{
+    width: 25%;
   }
 
   footer{
@@ -451,6 +510,29 @@ and (orientation : landscape) {
 }
 
 @media (min-width: 992px) { 
+  .name{
+    font-size: 6em;
+  }
+
+  .swe{
+    font-size: 4.5em;
+  }
+
+  .fa-github, .fa-linkedin, .fa-envelope{
+    display: inline;
+    margin: 1.5%;
+    font-size: 2.5em;
+  }
+
+  #transition{
+    margin-top: 15%;
+  }
+
+  .intro-message{
+    font-size: 2em;
+    margin-bottom: 5%;
+  }
+
   .section-title{
     font-size: 5em;
     margin-left: 15%;
@@ -499,6 +581,39 @@ and (orientation : portrait) {
 
 
 @media (min-width: 1200px) { 
+
+  .swe{
+    font-size:4em;
+    text-align: left;
+  }
+
+  .gradient-line{
+    width: 10px;
+    height: 250px;
+    margin: 0 1% 0 1%;
+    background: linear-gradient(180deg, #3282B8 31.25%, rgba(245, 245, 245, 0) 100%);
+  }
+  
+  .name{
+    font-size:5em;
+    text-align: right;
+  }
+
+  .fa-github, .fa-linkedin, .fa-envelope{
+    color: #BBE1FA;
+    font-size: 2em;
+    margin: 1%;
+  }
+
+  #transition{
+    margin-top: 10%;
+  }
+
+  .intro-message{
+    font-size: 1.5em;
+    margin-bottom: 3%;
+  }
+
   .section-title{
     font-size: 4.5em;
     margin-left: 20%;
@@ -511,6 +626,10 @@ and (orientation : portrait) {
   .carousel{
     width: 60%;
     height: 60%;
+  }
+
+  #submit-btn, #submit-btn:hover{
+    width: 20%;
   }
 
   form{
