@@ -210,9 +210,15 @@ section{
 }
 
 .carousel .carousel-indicators li {
-  width: 10px;
-  height: 10px;
   border-radius: 100%;
+}
+
+.project-stack{
+  display:none;
+}
+
+.project-title:hover{
+  text-decoration: underline;
 }
 
 /*CONTACT*/
@@ -380,17 +386,27 @@ footer{
 
   .carousel{
     width: 80vw;
-    height: 35vh;
+    height: 25vh;
   }
 
   .carousel-inner > .carousel-item > img {
     width: 80vw;
-    height: 35vh;
+    height: 25vh;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 2vw;
+    height: 2vw;
   }
 
   #projects{
-    margin-top: 30%;
-    margin-bottom: -30vh;
+    margin-top: 20vh;
+    margin-bottom: -35vh;
+  }
+
+  .project-title{
+    font-size: 1em;
+    font-weight: bold;
   }
 
   input{
@@ -440,6 +456,11 @@ footer{
   .carousel-inner > .carousel-item > img {
     width: 80vw;
     height: 90vh;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 1.5vw;
+    height: 1.5vw;
   }
 
   #projects{
@@ -534,6 +555,15 @@ footer{
     margin-left: 15%;
   }
 
+  .project-title{
+    font-size: 1.25em;
+  }
+
+  .project-stack{
+    display: inline-block;
+    padding-bottom: 1vh;
+  }
+
   form{
     width: 90%;
     font-size: 1em;
@@ -565,6 +595,11 @@ and (orientation : portrait) {
     height: 40vh;
   }
 
+  .carousel .carousel-indicators li {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+
   #projects{
     margin-top: 35%;
     margin-bottom: -20%;
@@ -590,6 +625,11 @@ and (orientation : landscape) {
   .carousel-inner > .carousel-item > img {
     width: 80vw;
     height: 90vh;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 1vw;
+    height: 1vw;
   }
 
   input{
@@ -696,12 +736,16 @@ and (orientation : portrait) {
     height: 40vh;
   }
 
+  .carousel .carousel-indicators li {
+    width: 0.9vw;
+    height: 0.9vw;
+  }
+
   input{
     height: 4vh;
   }
 
   textarea{
-    /* padding: 2vw; */
     height: 40vh;
   }
 
@@ -782,6 +826,11 @@ and (orientation : portrait) {
     margin-left: 25%;
   }
 
+  .carousel .carousel-indicators li {
+    width: 0.7vw;
+    height: 0.7vw;
+  }
+
   #projects{
     margin-bottom: 10%;
   }
@@ -819,6 +868,11 @@ and (orientation : portrait) {
   .carousel-inner > .carousel-item > img {
     width: 80vw;
     height: 70vh;
+  }
+
+  .carousel .carousel-indicators li {
+    width: 0.5vw;
+    height: 0.5vw;
   }
 
   form{
